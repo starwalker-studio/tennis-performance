@@ -1,0 +1,36 @@
+.index-img-court-one{
+    background-image: url(/src/backgrounds/index-canchas.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.text-background{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, 
+    rgba(0,0,0,0.8914916308320203) 0%, 
+    rgba(255,255,255,0.6898109585631127) 100%);
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    padding: 15ex;
+    text-align: center;
+}
+
+.button-index {
+    border-radius: 50px;
+    width: 21.5ex;
+    height: 5.8ex;
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .text-background{
+        font-size: xx-small;
+    }
+
+}
