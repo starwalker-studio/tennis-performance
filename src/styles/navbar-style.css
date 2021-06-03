@@ -22,3 +22,16 @@ nav .navbar-nav li a{
 #button-menu-nav{
     fill: aliceblue;
 }
+
+@media only screen 
+  and (max-device-width: 736px) { 
+
+    .ml-3{
+        margin-left: 0rem !important;
+    }
+
+    .mr-5{
+        margin-right: 0rem !important;
+    }
+
+}

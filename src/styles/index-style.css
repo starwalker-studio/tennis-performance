@@ -80,12 +80,10 @@ background: linear-gradient(0deg, rgba(175,175,175,0.7794468129048494) 0%, rgba(
 }
 
 @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+  and (max-device-width: 736px) { 
 
-    .text-background{
-        font-size: xx-small;
+    .text-background-one, .text-background-two, .text-background-three, .text-background-four, .text-background-five{
+        padding: 3.5ex;
     }
 
     h5, li{
