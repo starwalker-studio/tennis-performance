@@ -88,4 +88,12 @@ background: linear-gradient(0deg, rgba(175,175,175,0.7794468129048494) 0%, rgba(
         font-size: xx-small;
     }
 
+    h5, li{
+        font-size: smaller;
+    }
+
+    p, h6{
+        font-size: small;
+    }
+
 }
