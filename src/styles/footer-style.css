@@ -1,0 +1,11 @@
+.banner-contacto{
+    background-image: url(/src/backgrounds/banner-2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.logo-contacto{
+    width: 24ex;
+}
