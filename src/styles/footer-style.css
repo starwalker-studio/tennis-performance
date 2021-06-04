@@ -6,6 +6,23 @@
     color: aliceblue;
 }
 
-.logo-contacto{
-    width: 24ex;
+.footer-social-contact{
+    background-color: #ffc710;
 }
+
+.logo-contacto{
+    width: 8.5em !important;
+    height: 8.5em !important;
+}
+
+@media only screen 
+  and (max-device-width: 736px) {
+      h4, h5, h6 {
+          font-size: small;
+      }
+
+      .logo-contacto{
+        width: 0% !important;
+        height: 0% !important;
+    }
+  }

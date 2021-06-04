@@ -1,9 +1,11 @@
 .nav-social-contact{
     background-color: #ffc710;
+    height: 42px;
 }
 
 .logo-style{
     width: 11.5em;
+    height: 100% !important;
 }
 
 .logo-background{
@@ -32,6 +34,21 @@ nav .navbar-nav li a{
 
     .mr-5{
         margin-right: 0rem !important;
+    }
+
+    .mobil-contact{
+        text-indent: -9999px;
+        display: none;
+    }
+
+}
+
+@media only screen 
+  and (max-device-width: 768px) {
+
+    .ipad-contact{
+        text-indent: -9999px;
+        display: none;
     }
 
 }
