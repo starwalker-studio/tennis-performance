@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/index-style.css';
 
 const Index = () => {
@@ -49,15 +50,17 @@ const Index = () => {
             </div>
             <div className="d-flex justify-content-center index-banner-four">
                 <div className="d-flex text-background-five">
-                <div className="col">
-                    <h6><strong>Entérate de las noticias de nuestros jugadores</strong></h6>
-                    <button className="btn btn-dark mt-3 button-index button-phone">Noticias</button>
+                    <div className="col">
+                        <h6><strong>Entérate de las noticias de nuestros jugadores</strong></h6>
+                        <button className="btn btn-dark mt-3 button-index button-phone">Noticias</button>
+                    </div>
+                    <div className="col">
+                        <h6><strong>Conoce a nuestros amigos visitando nuestra galería</strong></h6>
+                        <NavLink to="/gallery">
+                            <button className="btn btn-dark mt-3 button-index button-phone">Galería</button>
+                        </NavLink>
+                    </div>
                 </div>
-                <div className="col">
-                    <h6><strong>Conoce a nuestros amigos visitando nuestra galería</strong></h6>
-                    <button className="btn btn-dark mt-3 button-index button-phone">Galería</button>
-                </div>
-                    </div>                
             </div>
         </div>
     )

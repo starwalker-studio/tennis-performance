@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import "../styles/navbar-style.css";
 
 const Navbar = () => {
@@ -61,6 +62,9 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link mr-4" href="#/">Torneos</a>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-item nav-link mr-3" to="/gallery" exact>Galería</NavLink>
                             </li>
                         </ul>
                     </div>
