@@ -35,7 +35,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="d-flex justify-content-center logo-background p-2">
-                <img src="img/logo-banner.png" alt="" className="logo-style img-fluid" />
+                <NavLink to="/">
+                    <img src="img/logo-banner.png" alt="" className="logo-style img-fluid" />
+                </NavLink>
             </div>
             <div className="d-flex justify-content-center nav-background-color">
                 <nav className="navbar navbar-expand-lg mx-auto">

@@ -41,7 +41,7 @@ export const getParticulares = (num) => async (dispatch) => {
             const imgSrc = await storage.ref().child(CLASES_PARTICULARES).child(`p-${num}.png`).getDownloadURL();
             dispatch({
                 type: GET_PHOTOS_CLASES_PARTICULARES,
-                list: listItems,
+                list: listItems.items.length,
                 link: imgSrc,
                 loading: false
             });
@@ -62,7 +62,7 @@ export const getGrupales = (num) => async (dispatch) => {
             const imgSrc = await storage.ref().child(CLASES_GRUPALES).child(`g-${num}.png`).getDownloadURL();
             dispatch({
                 type: GET_PHOTOS_CLASES_GRUPALES,
-                list: listItems,
+                list: listItems.items.length,
                 link: imgSrc,
                 loading: false
             });
@@ -80,10 +80,10 @@ export const getTorneos = (num) => async (dispatch) => {
             loading: true
         });
         if (num <= listItems.items.length) {
-            const imgSrc = await storage.ref().child(TORNEOS).child(`p-${num}.png`).getDownloadURL();
+            const imgSrc = await storage.ref().child(TORNEOS).child(`t-${num}.png`).getDownloadURL();
             dispatch({
                 type: GET_PHOTOS_TORNEOS,
-                list: listItems,
+                list: listItems.items.length,
                 link: imgSrc,
                 loading: false
             });
