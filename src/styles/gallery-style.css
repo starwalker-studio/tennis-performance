@@ -1,5 +1,13 @@
 .card-album-gallery{ width: 18rem; }
 
+.gallery-banner{
+	background-image: url(/src/backgrounds/gallery-header.png);
+    background-repeat: no-repeat;
+    background-position: right;
+	background-size: cover;
+	color: aliceblue;
+}
+
 .button-img {
     border-radius: 50px;
     width: 8.5ex;

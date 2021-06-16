@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Index from './components/Index';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
+import News from './components/News';
+import Torneos from './components/Torneos';
 
 const App = () => {
   return (
@@ -12,7 +14,9 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route component={Index} path="/" exact />
-          <Route component={Gallery} path="/gallery" exact />
+          <Route component={Gallery} path="/galeria" exact />
+          <Route component={News} path="/noticias" exact />
+          <Route component={Torneos} path="/torneos" exact />
         </Switch>
         <Footer />
       </div>
