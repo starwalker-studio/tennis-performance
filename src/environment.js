@@ -12,9 +12,12 @@ export const INDEX_BANNER_LIST = [
 
 export const INDEX_NEWS_TITLE = 'Torneo Borbolla Open';
 
+export const INDEX_NEWS_TITLE_TWO = 'Jorge Olaya Jr. Invitado a jugar en Alemania 2021.';
+
 export const INDEX_NEWS_CONTENT = 'Torneo inter club organizado por Carlos Borbolla,'
 + ' donde participaron Jorge y Alejandro Olaya'
 + ', en este torneo la modalidad fue de dobles, los partidos de 1 set a 8 juego.';
+
 
 export const INDEX_NEWS_CONTENT_BOTTOM = ' Jorge Olaya junto con Antonio Diez llegaron a la final.';
 
@@ -63,3 +66,31 @@ export const TRNMT_HEADER = 'Torneos';
 export const TRNMT_HEADER_SUB_TITLE = 'Próximamente torneos en fechas cercanas.';
 
 export const TRNMT_HEADER_CONTENT = 'Síguenos en nuestras redes sociales para informarte sobre nuestras próximas fechas.';
+
+export const REGISTER_HEADER = 'Fecha del torneo:';
+
+export const REGISTER_REQUIRE = 'Para asistir a este torneo es necesario que te registres.'; 
+
+export const REGISTER_PRICE = ' únicamente se paga al llegar al sitio establecido.';
+
+export const REGISTER_SCHEDULE = 'Horario del torneo: ';
+
+export const REGISTER_GAME_MODE = 'Modo de juego: ';
+
+export const REGISTER_ARRIVAL_HOUR = 'Hora de llegada: ';
+
+export const REGISTER_RECOM_ONE = 'Se recomienda llegar a la hora indicada para asiganrte a las eliminatorias junto con los demas participantes y calentamiento previo al juego.';
+
+export const REGISTER_RECOM_TWO = 'Llevar lo necesario para la comodidad del jugador durante el partido y tiempo en el torneo.';
+
+export const REGISTER_SUCCESS_HEADER = 'Gracias por registrarte, Te esperamos.';
+
+export const REGISTER_SUCCESS_INFO = 'Con tu registro serás colocado en las eliminatorias. Es importante llegar a la hora indicada y con tu pago.';
+
+export const AUTH_MAIL = 'admin@tennisperformance.net';
+
+export const AUTH_PASSWORD = '92e62GthosUcrVAm';
+
+export const PLAYERS_FOLDER = 'players';
+
+export const TRNMT_FOLDER = 'torneo';

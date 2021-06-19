@@ -1,0 +1,15 @@
+
+.img-iphone{
+  width: 80% !important;
+  height: 80% !important;
+ }
+
+@media only screen 
+  and (max-device-width: 736px) { 
+
+    .img-iphone{
+      width: 79.5% !important;
+      height: 79.5% !important;
+    }
+
+}

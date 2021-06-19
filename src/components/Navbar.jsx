@@ -65,7 +65,8 @@ const Navbar = () => {
                                 <a className="nav-link mr-4" href="#/">Nuestras Clases</a>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-item nav-link mr-3" to="/noticias" exact>Noticias</NavLink>
+                                <NavLink className="nav-item nav-link mr-3"
+                                    to={{ pathname: "/noticias", state: { view: false, button: false } }} exact>Noticias</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-item nav-link mr-3" to="/torneos" exact>Torneos</NavLink>
