@@ -1,17 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useEffect, useRef, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { trnmtInfo } from '../redux/trnmtDucks';
 import Nodate from './Nodate';
 import Register from './Register';
 import '../styles/gallery-style.css';
+import axios from 'axios';
 
 const Torneos = () => {
+    const [info, setInfo] = useState({});
     const dispatch = useDispatch();
     const top = useRef();
     const scrollTop = (ref) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    const info = useSelector(store => store.authPlayerRegister.info);
-    const loading = useSelector(store => store.authPlayerRegister.loading);
     useEffect(() => {
+        axios.get('./info.json').then(e => {
+           setInfo(e.data);
+        });
         scrollTop(top);
         const getTrnmtInfo = () => {
             dispatch(trnmtInfo());
@@ -20,29 +23,15 @@ const Torneos = () => {
     }, [top, dispatch]);
     return (
         <div className="container p-4 mt-4" ref={top}>
-            {
-                loading ? (
-                    <div className="ball-padding mb-4">
-                        <div className="col mb-4">
-                            <div className="center-ball">
-                                <div className="balle"></div>
-                                <div className="ombre"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                ) : (
-                        <div>
-                            {
-                                info.event ? (
-                                    <Register info={info}/>
-                                ) : (
-                                        <Nodate />
-                                    )
-                            }
-                        </div>
-                    )
-            }
+            <div>
+                {
+                    info.event ? (
+                        <Register info={info} />
+                    ) : (
+                            <Nodate />
+                        )
+                }
+            </div>
         </div>
     )
 }

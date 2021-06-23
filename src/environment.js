@@ -87,6 +87,8 @@ export const REGISTER_SUCCESS_HEADER = 'Gracias por registrarte, Te esperamos.';
 
 export const REGISTER_SUCCESS_INFO = 'Con tu registro serás colocado en las eliminatorias. Es importante llegar a la hora indicada y con tu pago.';
 
+export const REGISTER_BUTTON = 'Correo (opcional)';
+
 export const AUTH_MAIL = 'admin@tennisperformance.net';
 
 export const AUTH_PASSWORD = '92e62GthosUcrVAm';

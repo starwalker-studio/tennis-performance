@@ -16,7 +16,6 @@ const Register = ({ info }) => {
     const [inputNameStyle, setInputNameStyle] = useState('form-control form-control-lg');
     const [inputStyle, setInputStyle] = useState('form-control form-control-lg');
     const id = useSelector(store => store.authPlayerRegister.regId);
-    const loading = useSelector(store => store.authPlayerRegister.loading);
     const top = useRef();
     const scrollTop = (ref) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     const dispatch = useDispatch();
@@ -79,52 +78,39 @@ const Register = ({ info }) => {
                 {
                     !success ? (
                         <div>
-                            {
-                                loading ? (
-                                    <div className="ball-padding mb-4">
-                                        <div className="col mb-4">
-                                            <div className="center-ball">
-                                                <div className="balle"></div>
-                                                <div className="ombre"></div>
-                                            </div>
-                                        </div>
+                            <form onSubmit={submitData}>
+                                <div className="container-fluid p-3">
+                                    <div className="form-group">
+                                        <label>Nombre Completo <span className="text-danger"><strong>*</strong></span></label>
+                                        <input type="text"
+                                            className={fullName.trim() ? (inputNameStyle) : ('form-control form-control-lg')}
+                                            id="nombre" onChange={e => setFullName(e.target.value)} />
                                     </div>
-                                ) : (
-                                        <form onSubmit={submitData}>
-                                            <div className="container-fluid p-3">
-                                                <div className="form-group">
-                                                    <label>Nombre Completo <span className="text-danger"><strong>*</strong></span></label>
-                                                    <input type="text"
-                                                        className={fullName.trim() ? (inputNameStyle) : ('form-control form-control-lg')}
-                                                        id="nombre" onChange={e => setFullName(e.target.value)} />
-                                                </div>
-                                                <div className="form-group">
-                                                    <label>¿De dónde nos visitas? <span className="text-danger"><strong>*</strong></span></label>
-                                                    <select className={countryState.trim() ? (inputStyle) : ('form-control form-control-lg')}
-                                                        value={countryState} id="estado"
-                                                        onChange={e => setCountryState(e.target.value)}>
-                                                        < option value="" className="text-muted" > Seleccionar</option>
-                                                        <option value="CDMX">CDMX</option>
-                                                        <option value="Morelos">Morelos</option>
-                                                        <option value="Puebla">Puebla</option>
-                                                        <option value="Edo. de México">Edo. de México</option>
-                                                    </select>
-                                                </div>
-                                                <p className="font-weight-light text-muted mt-4"><span className="text-danger">*</span> Campos obligatorios</p>
-                                                <hr />
-                                                <div className="form-group">
-                                                    <label>Correo</label>
-                                                    <input type="mail" className="text-lowercase form-control form-control-lg"
-                                                        id="email" onChange={e => setMail(e.target.value.toLowerCase())} />
-                                                </div>
-                                                <div className="form-group mt-5">
-                                                </div>
-                                                <button type="submit" className="btn btn-info btn-lg btn-block" disabled={submitButton}>¡Registrar al torneo!</button>
-                                                <p className="font-italic font-weight-light text-muted mt-4">Llena los campos obligatorios para habilitar este botón y tu registro será exitoso.</p>
-                                            </div>
-                                        </form>
-                                    )
-                            }
+                                    <div className="form-group">
+                                        <label>¿De dónde nos visitas? <span className="text-danger"><strong>*</strong></span></label>
+                                        <select className={countryState.trim() ? (inputStyle) : ('form-control form-control-lg')}
+                                            value={countryState} id="estado"
+                                            onChange={e => setCountryState(e.target.value)}>
+                                            < option value="" className="text-muted" > Seleccionar</option>
+                                            <option value="CDMX">CDMX</option>
+                                            <option value="Morelos">Morelos</option>
+                                            <option value="Puebla">Puebla</option>
+                                            <option value="Edo. de México">Edo. de México</option>
+                                        </select>
+                                    </div>
+                                    <p className="font-weight-light text-muted mt-4"><span className="text-danger">*</span> Campos obligatorios</p>
+                                    <hr />
+                                    <div className="form-group">
+                                        <label>{environment.REGISTER_BUTTON}</label>
+                                        <input type="mail" className="text-lowercase form-control form-control-lg"
+                                            id="email" onChange={e => setMail(e.target.value.toLowerCase())} />
+                                    </div>
+                                    <div className="form-group mt-5">
+                                    </div>
+                                    <button type="submit" className="btn btn-info btn-lg btn-block" disabled={submitButton}>¡Registrar al torneo!</button>
+                                    <p className="font-italic font-weight-light text-muted mt-4">Llena los campos obligatorios para habilitar este botón y tu registro será exitoso.</p>
+                                </div>
+                            </form>
                         </div>
                     ) : (
                             <div className="mt-3" ref={top}>
