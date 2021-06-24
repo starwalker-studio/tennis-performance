@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Gallery from './components/Gallery';
 import News from './components/News';
 import Torneos from './components/Torneos';
+import Players from './components/Players';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route component={Gallery} path="/galeria" exact />
           <Route component={News} path="/noticias" exact />
           <Route component={Torneos} path="/torneos" exact />
+          <Route component={Players} path="/jugadores" exact />
         </Switch>
         <Footer />
       </div>

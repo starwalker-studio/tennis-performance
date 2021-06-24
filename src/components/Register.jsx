@@ -5,7 +5,10 @@ import * as environment from '../environment';
 import '../styles/gallery-style.css';
 
 const Register = ({ info }) => {
-    const date = new Date();
+    const day = new Date().getDate().toString();
+    const month = new Date().getMonth().toString();
+    const year = new Date().getFullYear().toString();
+    const date = day + "/" + month + "/" + year;
     const [fullName, setFullName] = useState('');
     const [countryState, setCountryState] = useState('');
     const [mail, setMail] = useState('');
@@ -55,7 +58,6 @@ const Register = ({ info }) => {
             setSuccess(true);
             scrollTop(top);
         }
-
 
     }, [checkName, checkState, fullName, countryState, id, top]);
 

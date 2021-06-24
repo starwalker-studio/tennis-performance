@@ -47,13 +47,11 @@ export const trnmtInfo = () => async (dispatch) => {
     });
     try {
         auth.signInWithEmailAndPassword(environment.AUTH_MAIL, environment.AUTH_PASSWORD);
-        await db.collection(environment.TRNMT_FOLDER).get().then(e => {
-            e.forEach(i => {
-                dispatch({
-                    type: TRNMT_INFO,
-                    trnmt: i.data()
-                })
-            })
+        const data = await db.collection(environment.PLAYERS_FOLDER).get();
+        const list = data.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        dispatch({
+            type: TRNMT_INFO,
+            trnmt: list
         });
     } catch (error) {
         console.log(error);

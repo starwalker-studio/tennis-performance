@@ -15,8 +15,8 @@ export const INDEX_NEWS_TITLE = 'Torneo Borbolla Open';
 export const INDEX_NEWS_TITLE_TWO = 'Jorge Olaya Jr. Invitado a jugar en Alemania 2021.';
 
 export const INDEX_NEWS_CONTENT = 'Torneo inter club organizado por Carlos Borbolla,'
-+ ' donde participaron Jorge y Alejandro Olaya'
-+ ', en este torneo la modalidad fue de dobles, los partidos de 1 set a 8 juego.';
+    + ' donde participaron Jorge y Alejandro Olaya'
+    + ', en este torneo la modalidad fue de dobles, los partidos de 1 set a 8 juego.';
 
 
 export const INDEX_NEWS_CONTENT_BOTTOM = ' Jorge Olaya junto con Antonio Diez llegaron a la final.';
@@ -69,7 +69,7 @@ export const TRNMT_HEADER_CONTENT = 'Síguenos en nuestras redes sociales para i
 
 export const REGISTER_HEADER = 'Fecha del torneo:';
 
-export const REGISTER_REQUIRE = 'Para asistir a este torneo es necesario que te registres.'; 
+export const REGISTER_REQUIRE = 'Para asistir a este torneo es necesario que te registres.';
 
 export const REGISTER_PRICE = ' únicamente se paga al llegar al sitio establecido.';
 
@@ -96,3 +96,34 @@ export const AUTH_PASSWORD = '92e62GthosUcrVAm';
 export const PLAYERS_FOLDER = 'players';
 
 export const TRNMT_FOLDER = 'torneo';
+
+export const COLUMNS_DATA_TABLE = [
+    {
+        name: 'Nombre',
+        selector: 'name',
+        sortable: true,
+        center: true
+    },
+    {
+        name: 'Estado',
+        selector: 'state',
+        sortable: true,
+        center: true
+    },
+    {
+        name: 'Correo',
+        selector: 'mail',
+        sortable: true,
+        center: true
+    },
+    {
+        name: 'Fecha de Registro',
+        selector: 'date',
+        sortable: true,
+        center: true
+    }
+];
+
+export const TABLE_INSTRUCTIONS_ONE = "Al hacer click al botón crea una copia de esta lista a PDF dependiendo la paginación de la tabla.";
+
+export const TABLE_INSTRUCTIONS_TWO = "Es recomendable utilizar esta función en PC para mejor funcionamiento e impresión a PDF."
