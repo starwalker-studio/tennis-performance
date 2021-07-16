@@ -7,12 +7,13 @@ const Footer = () => {
     return (
         <div>
             <div className="banner-contacto">
-                <div className="d-flex justify-content-center container">
-                    <div className="col"></div>
-                    <div className="d-flex col-9 p-2 mt-3 mb-1 ml-5">
+                <div className="row justify-content-center container-fluid">
+                    <div className="col text-right mt-4 mr-2">
                         <NavLink to="/">
-                            <img src="img/logo-banner.png" alt="" className="mt-2 mr-5 img-fluid logo-contacto text-center" />
+                            <img src="img/logo-banner.png" alt="" className="img-fluid logo-contacto" />
                         </NavLink>
+                    </div>
+                    <div className="col p-2 mt-3 mb-1">
                         <div>
                             <h4 className="mb-2">{environment.FOOTER_CONTACT_TITLE}</h4>
                             <br />

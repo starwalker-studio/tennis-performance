@@ -11,7 +11,9 @@ const Index = () => {
             <div className="row index-one">
                 <div className="col-sm container mt-5 mb-5 ml-4">
                     <h3 className="mt-4">{environment.INDEX_HEADER}</h3>
-                    <button className="btn btn-outline-warning btn-lg mt-3 button-index">Conoce más</button>
+                    <NavLink to="/clinicas">
+                        <button className="btn btn-outline-warning btn-lg mt-3 button-index">Conoce más</button>
+                    </NavLink>
                 </div>
                 <div className="col-sm-4"></div>
             </div>
@@ -44,7 +46,7 @@ const Index = () => {
                     </NavLink>
                 </div>
             </div>
-            <div className="row justify-content-center index-four">
+            <div className="row justify-content-center index-four p-5">
                 <div className="col-sm p-1 mt-4 mb-4">
                     <h4>{environment.INDEX_TMNT}</h4>
                     <NavLink to="/torneos">
@@ -59,7 +61,7 @@ const Index = () => {
                 <div className="col-sm p-1 ml-4">
                 </div>
             </div>
-            <div className="container-fluid justify-content-center text-center p-3">
+            <div className="container-fluid justify-content-center text-center p-5">
                 <div className="row">
                     <div className="col-sm">
                         <h4>Ubicación</h4>

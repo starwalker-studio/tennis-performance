@@ -58,11 +58,8 @@ const Navbar = () => {
                     </button>
                     <div className="collapse navbar-collapse font-menu-navbar" id="navbarNav">
                         <ul className="navbar-nav">
-                            <li className="nav-item active">
-                                <a className="nav-link mr-4" href="#/">Quienes Somos</a>
-                            </li>
                             <li className="nav-item">
-                                <a className="nav-link mr-4" href="#/">Nuestras Clases</a>
+                                <NavLink className="nav-item nav-link mr-3" to="/clinicas" exact>Clínicas</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-item nav-link mr-3"

@@ -14,10 +14,15 @@ export const INDEX_NEWS_TITLE = 'Torneo Borbolla Open';
 
 export const INDEX_NEWS_TITLE_TWO = 'Jorge Olaya Jr. Invitado a jugar en Alemania 2021.';
 
+export const INDEX_NEWS_TITLE_THREE = 'Morelos gana medalla de Bronce en los Juegos Nacionales.';
+
 export const INDEX_NEWS_CONTENT = 'Torneo inter club organizado por Carlos Borbolla,'
     + ' donde participaron Jorge y Alejandro Olaya'
     + ', en este torneo la modalidad fue de dobles, los partidos de 1 set a 8 juego.';
 
+export const INDEX_NEWS_CONTENT_THREE = 'Jóvenes tenistas de Morelos fueron a representar su estado en los Juegos Nacionales 2021'
+    + ' organizada por la CONADE, '
+    + 'Alexia Estrada y Valeria Aylin García Chávez obtuvieron el tercer lugar.';
 
 export const INDEX_NEWS_CONTENT_BOTTOM = ' Jorge Olaya junto con Antonio Diez llegaron a la final.';
 

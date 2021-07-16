@@ -13,7 +13,9 @@ const NoticeFooter = () => {
                 </div>
                 <div className="col-sm mt-3 mb-3">
                     <h5>Entrena con nosotros</h5>
-                    <p className="stretched-link">Conoce más</p>
+                    <NavLink to="/clinicas">
+                        <p className="stretched-link">Conoce más</p>
+                    </NavLink>
                 </div>
             </div>
         </div>

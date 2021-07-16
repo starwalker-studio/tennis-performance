@@ -7,6 +7,7 @@ import Gallery from './components/Gallery';
 import News from './components/News';
 import Torneos from './components/Torneos';
 import Players from './components/Players';
+import Clinicas from './components/Clinicas';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route component={News} path="/noticias" exact />
           <Route component={Torneos} path="/torneos" exact />
           <Route component={Players} path="/jugadores" exact />
+          <Route component={Clinicas} path="/clinicas" exact />
         </Switch>
         <Footer />
       </div>
