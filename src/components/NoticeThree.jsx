@@ -59,13 +59,13 @@ const NoticeThree = () => {
                             </ul>
                         </div>
                         <div className="col p-2">
-                            <h6>{'14 (f) menores varonil.'}</h6>
+                            <h6>{'14 (v) menores varonil.'}</h6>
                             <ul>
                                 <li>Patricio Soria</li>
                                 <li>Emiliano Aguilar</li>
                             </ul>
                             <br />
-                            <h6>{'16 (f) menores varonil.'}</h6>
+                            <h6>{'16 (v) menores varonil.'}</h6>
                             <ul>
                                 <li>Rodrigo Lozano</li>
                                 <li>Andrés Hernández</li>
