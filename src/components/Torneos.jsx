@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Nodate from './Nodate';
+import EventoTorneo from './EventoTorneo';
 import Register from './Register';
 import '../styles/gallery-style.css';
 import axios from 'axios';
@@ -21,7 +21,7 @@ const Torneos = () => {
                     info.event ? (
                         <Register info={info} />
                     ) : (
-                            <Nodate />
+                            <EventoTorneo />
                         )
                 }
             </div>
