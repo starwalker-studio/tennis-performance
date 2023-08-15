@@ -1,7 +1,7 @@
 export const INDEX_HEADER = 'Somos tu mejor opción';
 
-export const INDEX_NEW_INFO = 'Tenemos más de 50 becados en universidades americanas y nacionales' +
-    'alumnos con ranking estatal, nacional e internacional coaches certificados ubicados en uno de los fraccionamientos más seguros del Estado de Morelos';
+export const INDEX_NEW_INFO = 'Tenemos más de 50 becados en universidades americanas y nacionales.' +
+    ' Alumnos con ranking estatal, nacional e internacional coaches certificados, ubicados en uno de los fraccionamientos más seguros del Estado de Morelos.';
 
 export const INDEX_NEW_INFO_BOTTOM = '... y el mejor clima para la práctica del tenis.';    
 
