@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { trnmtInfo } from '../redux/trnmtDucks';
 import DataTable from 'react-data-table-component';
 import * as environment from '../environment';
-import Pdf from 'react-to-pdf';
+// import Pdf from 'react-to-pdf';
 import axios from 'axios';
 
 const Players = () => {
@@ -48,11 +48,11 @@ const Players = () => {
             </div>
             <hr />
             <div className="row justify-content-center p-3 mb-3 mt-2">
-                <Pdf targetRef={listRef} filename="jugadores.pdf" scale={0.7}>
+                {/* <Pdf targetRef={listRef} filename="jugadores.pdf" scale={0.7}>
                     {({ toPdf }) =>
                         <button className="btn btn-success btn-lg"
                             onClick={toPdf}>Copiar lista a PDF</button>}
-                </Pdf>
+                </Pdf> */}
             </div>
             <div className="container-fluid p-4 text-center alert alert-secondary">
                 <p className="font-weight-bold text-muted font-italic mt-2">{environment.TABLE_INSTRUCTIONS_ONE}</p>
