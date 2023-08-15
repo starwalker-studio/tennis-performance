@@ -1,6 +1,19 @@
-export const INDEX_HEADER = 'Tu tenis va a mejorar en Tennis Performance';
+export const INDEX_HEADER = 'Somos tu mejor opción';
+
+export const INDEX_NEW_INFO = 'Tenemos más de 50 becados en universidades americanas y nacionales' +
+    'alumnos con ranking estatal, nacional e internacional coaches certificados ubicados en uno de los fraccionamientos más seguros del Estado de Morelos';
+
+export const INDEX_NEW_INFO_BOTTOM = '... y el mejor clima para la práctica del tenis.';    
 
 export const INDEX_BANNER_ONE = 'Contamos con entrenadores profesionales e instalaciones de alto nivel.';
+
+export const SUMMER_HEADER = 'VERANO TP 2023';
+
+export const SUMMER_HEADER_BOTTOM = '17 de Julio al 26 de Agosto';
+
+export const SUMMER_TEXT = 'Ven y participa en nuestros entrenamientos semanales que tenemos para ti';
+
+export const SUMMER_HEADER_INFO = 'Entrenamiento para todos los niveles';
 
 export const INDEX_BANNER_LIST = [
     'Coaches certificados y de buen nivel competitivo.',

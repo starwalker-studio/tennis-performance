@@ -7,17 +7,32 @@ import * as environment from '../environment';
 const Index = () => {
     useEffect(() => { window.scrollTo(0, 0); }, []);
     return (
-        <div className="container-fluid">
-            <div className="row index-one">
-                <div className="col-sm container mt-5 mb-5 ml-4">
-                    <h3 className="mt-4">{environment.INDEX_HEADER}</h3>
+        <div className="container-xxl">
+            <div className="index-summer">
+                <div className="container-sm mt-1 mb-1 text-center">
+                    <h3 className="mt-2"><strong>{environment.SUMMER_HEADER}</strong></h3>
+                    <h4 className="mt-2"><strong>{environment.SUMMER_HEADER_BOTTOM}</strong></h4>
+                    <p className='pt-3'><strong>{environment.SUMMER_TEXT}</strong></p>
                     <NavLink to="/clinicas">
-                        <button className="btn btn-outline-warning btn-lg mt-3 button-index">Conoce más</button>
+                        <button className="btn btn-dark btn-lg mt-1 button-index">Conoce más</button>
                     </NavLink>
                 </div>
-                <div className="col-sm-4"></div>
             </div>
-            <div className="row justify-content-center index-two">
+            <div className="index-one">
+                <div className="container-sm mt-5 mb-5 text-center">
+                    <h3 className="mt-4">{environment.INDEX_HEADER}</h3>
+                    <p className='pt-3'>{environment.INDEX_NEW_INFO}</p>
+                    <p className=''>{environment.INDEX_NEW_INFO_BOTTOM}</p>
+                </div>
+            </div>
+            <div className="d-flex justify-content-center mt-5 mb-5">
+                <div className="col-9 card mr-1 ml-1 embed-responsive embed-responsive-16by9 text-center">
+                    <iframe title="youtube"
+                        className="embed-responsive-item"
+                        src="https://www.youtube.com/embed/_VFT7Or6XbE" ></iframe>
+                </div>
+            </div>
+            <div className="justify-content-center index-two">
                 <div className="col-sm">
                     <div className="text-center">
                         <div className="card-body">
@@ -32,9 +47,8 @@ const Index = () => {
                 <h2>Noticias</h2>
                 <IndexNews />
             </div>
-            <div className="row justify-content-center index-three">
-                <div className="col-sm"></div>
-                <div className="col-sm">
+            <div className="justify-content-center index-three">
+                <div className="text-center">
                     <h4>{environment.INDEX_GALLERY}</h4>
                     <NavLink to="/galeria">
                         <button className="btn btn-success btn-lg mt-3 button-index">
@@ -46,8 +60,8 @@ const Index = () => {
                     </NavLink>
                 </div>
             </div>
-            <div className="row justify-content-center index-four p-5">
-                <div className="col-sm p-1 mt-4 mb-4">
+            <div className="justify-content-center index-four p-5">
+                <div className="text-center p-1 mt-4 mb-4">
                     <h4>{environment.INDEX_TMNT}</h4>
                     <NavLink to="/torneos">
                         <button className="btn btn-warning btn-lg mt-2 button-index">
@@ -57,8 +71,6 @@ const Index = () => {
                             </svg>
                         </button>
                     </NavLink>
-                </div>
-                <div className="col-sm p-1 ml-4">
                 </div>
             </div>
             <div className="container-fluid justify-content-center text-center p-5">

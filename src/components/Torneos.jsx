@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
-import EventoTorneo from './EventoTorneo';
+import EventoTorneo from './Nodate';
 import Register from './Register';
 import '../styles/gallery-style.css';
 import axios from 'axios';
 
 const Torneos = () => {
-    const [info, setInfo] = useState({});    
+    const [info, setInfo] = useState({});
     const top = useRef();
     const scrollTop = (ref) => ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     useEffect(() => {
         axios.get('./info.json').then(e => {
-           setInfo(e.data);
+            setInfo(e.data);
         });
         scrollTop(top);
     }, [top]);
