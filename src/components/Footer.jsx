@@ -54,7 +54,7 @@ const Footer = () => {
             </div>
             <footer className="footer text-white bg-dark p-3 text-center">
                 <div className="d-flex justify-content-center">
-                    <p className="card-text text-muted">Tennis Performance 2022.</p>
+                    <p className="card-text text-muted">Tennis Performance 2024.</p>
                 </div>
             </footer>
         </div>

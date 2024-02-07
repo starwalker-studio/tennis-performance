@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+// import Actividades from './Actividades/Actividades';
 import { NavLink } from 'react-router-dom';
 import IndexNews from './IndexNews';
 import '../styles/index-style.css';
@@ -7,17 +8,7 @@ import * as environment from '../environment';
 const Index = () => {
     useEffect(() => { window.scrollTo(0, 0); }, []);
     return (
-        <div className="container-xxl">
-            <div className="index-summer">
-                <div className="container-sm mt-1 mb-1 text-center">
-                    <h3 className="mt-2"><strong>{environment.SUMMER_HEADER}</strong></h3>
-                    <h4 className="mt-2"><strong>{environment.SUMMER_HEADER_BOTTOM}</strong></h4>
-                    <p className='pt-3'><strong>{environment.SUMMER_TEXT}</strong></p>
-                    <NavLink to="/clinicas">
-                        <button className="btn btn-dark btn-lg mt-1 button-index">Conoce más</button>
-                    </NavLink>
-                </div>
-            </div>
+        <div className="container-xxl">            
             <div className="index-one">
                 <div className="container-sm mt-5 mb-5 text-center">
                     <h3 className="mt-4">{environment.INDEX_HEADER}</h3>
