@@ -7,7 +7,7 @@ const Clinicas = () => {
     useEffect(() => { scrollTop(top); }, [top]);
     return (
         <div className="text-center" ref={top}>
-            <div className="index-summer-info">
+            {/* <div className="index-summer-info">
                 <div className="container-sm mt-1 mb-1 text-center">
                     <h3 className="mt-2"><strong>{environment.SUMMER_HEADER}</strong></h3>
                     <h4 className="mt-2"><strong>{environment.SUMMER_HEADER_BOTTOM}</strong></h4>
@@ -26,7 +26,7 @@ const Clinicas = () => {
                     <p>Precio especial para los alumnos <strong>Tennis Performance</strong></p>
                     <br />
                 </div>                
-            </div>
+            </div> */}
             <div className="container mt-4">
                 <div className="p-3 mt-5 mb-5">
                     <h3>Ofrecemos diversas opciones de clínicas</h3>
