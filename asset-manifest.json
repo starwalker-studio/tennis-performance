@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/tennis-performance/static/css/main.e8db1191.chunk.css",
+    "main.js": "/tennis-performance/static/js/main.b4063b18.chunk.js",
+    "main.js.map": "/tennis-performance/static/js/main.b4063b18.chunk.js.map",
+    "runtime-main.js": "/tennis-performance/static/js/runtime-main.9a35f3c7.js",
+    "runtime-main.js.map": "/tennis-performance/static/js/runtime-main.9a35f3c7.js.map",
+    "static/js/2.cf576f57.chunk.js": "/tennis-performance/static/js/2.cf576f57.chunk.js",
+    "static/js/2.cf576f57.chunk.js.map": "/tennis-performance/static/js/2.cf576f57.chunk.js.map",
+    "index.html": "/tennis-performance/index.html",
+    "static/css/main.e8db1191.chunk.css.map": "/tennis-performance/static/css/main.e8db1191.chunk.css.map",
+    "static/js/2.cf576f57.chunk.js.LICENSE.txt": "/tennis-performance/static/js/2.cf576f57.chunk.js.LICENSE.txt",
+    "static/media/1.67bfaee6.png": "/tennis-performance/static/media/1.67bfaee6.png",
+    "static/media/2.d4364a5d.png": "/tennis-performance/static/media/2.d4364a5d.png",
+    "static/media/3.62be5804.png": "/tennis-performance/static/media/3.62be5804.png",
+    "static/media/4.b85a073a.png": "/tennis-performance/static/media/4.b85a073a.png",
+    "static/media/5.ca849c52.jpeg": "/tennis-performance/static/media/5.ca849c52.jpeg",
+    "static/media/acapulco-1.b4d8457b.png": "/tennis-performance/static/media/acapulco-1.b4d8457b.png",
+    "static/media/acapulco-2.ecf3d058.png": "/tennis-performance/static/media/acapulco-2.ecf3d058.png",
+    "static/media/acapulco-3.a5456d02.png": "/tennis-performance/static/media/acapulco-3.a5456d02.png",
+    "static/media/index-style.css": "/tennis-performance/static/media/torneo-index-background.3ba16ae8.png",
+    "static/media/footer-style.css": "/tennis-performance/static/media/banner-2.85a8eb84.png",
+    "static/media/gallery-style.css": "/tennis-performance/static/media/gallery-header.363621e9.png",
+    "static/media/grupal.85ec017e.png": "/tennis-performance/static/media/grupal.85ec017e.png",
+    "static/media/particular.5aed45c1.png": "/tennis-performance/static/media/particular.5aed45c1.png",
+    "static/media/torneo.6db0a269.png": "/tennis-performance/static/media/torneo.6db0a269.png",
+    "static/media/video.99f1c2c0.png": "/tennis-performance/static/media/video.99f1c2c0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a35f3c7.js",
+    "static/js/2.cf576f57.chunk.js",
+    "static/css/main.e8db1191.chunk.css",
+    "static/js/main.b4063b18.chunk.js"
+  ]
+}
